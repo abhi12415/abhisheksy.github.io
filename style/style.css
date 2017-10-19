@@ -123,6 +123,13 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 	.abtmetxt{
 		font-size: 85%;
 	}
+	
+	.edu{
+		margin-left: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -140,7 +147,12 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 	.abtmetxt{
 		font-size: 85%;
 	}
-	
+	.edu{
+		margin-left: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 
@@ -197,7 +209,7 @@ stroke-dashoffset:0
   display: inline-block;
   position: relative;
   text-align: center;
-  color: #93A2AC;
+  color: white;
   font-family: Lato;
   font-weight: 100;
   margin: 2rem;
