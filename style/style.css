@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+
 html,body
 {
     width: 100%;
@@ -12,7 +8,7 @@ html,body
     padding: 0px;
 }
 
-html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:after{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit;}
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 #modh2 h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.8;}
 
 .cirper{}
@@ -20,24 +16,19 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
 center {
     display: block;
     text-align: -webkit-center;
-	text-align: -moz-center;
 }
 h2 {
     display: block;
     font-size: 1.5em;
     -webkit-margin-before: 0.83em;
-	-moz-margin-before: 0.83em;
     -webkit-margin-after: 0.83em;
-	-moz-margin-after: 0.83em;
     -webkit-margin-start: 0px;
-	-moz-margin-start: 0px;
     -webkit-margin-end: 0px;
-	-moz-margin-end: 0px;
     font-weight: bold;
 }
 
 h2{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:after{-moz-box-sizing:inherit;-webkit-box-sizing:inherit;box-sizing:inherit;}
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 
 
@@ -56,25 +47,25 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
     background-repeat: no-repeat;
     background-size: cover;
 	-moz-background-size: cover; -webkit-background-size: cover;
-    overflow:hidden;
+	
 }
 
-
+.hidder{ overflow:hidden; }
 
 
 .mymenuimage {
   display: block;
   width: 100%;
   height: auto;
-  border-radius:50%; top: 50%; left:50%; position:relative;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+  border-radius:50%; top: 50%; left:50%; position:relative;transform: translate(-50%, -50%);
 }
 
-.circle{border-radius:50%; top: 50%; left:50%; position:relative;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
-.circlee{border-radius:50%; top: 50%; position:relative;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
+.circle{border-radius:50%; top: 50%; left:50%; position:relative;transform: translate(-50%, -50%);}
+.circlee{border-radius:50%; top: 50%; position:relative;transform: translate(-50%, -50%);}
 
 .meincircle{display: block;
   width: 20%;
-  height: auto; border-radius:50%; top: 50%; left:50%; position:relative;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);transform: translate(-50%, -50%);}
+  height: auto; border-radius:50%; top: 50%; left:50%; position:relative;transform: translate(-50%, -50%);}
   
 .menucontainer {
   position: relative;
@@ -85,7 +76,7 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
   display: block;
   width: 100%;
   height: auto;
-  border-radius:50%; top: 50%; left:50%; position:relative;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+  border-radius:50%; top: 50%; left:50%; position:relative;transform: translate(-50%, -50%);
 }
 
 .menuoverlay {
@@ -100,8 +91,6 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
   opacity: 0;
   transition: .5s ease;
   background-color: #000000;
-  -webkit-transform: translate(0%, -50%);
-  -moz-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
 :focus{
@@ -117,8 +106,6 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
@@ -127,8 +114,6 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
 
 @media screen and (max-width: 270px){
 	.parallax{
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
 		background-size:cover;
 	}
 	.meincircle{
@@ -146,8 +131,6 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
  
 @media screen and (max-width: 270px){
 	.parallax{
-		-webkit-background-size:cover;
-		-moz-background-size:cover;
 		background-size:cover;
 	}
 	.meincircle{
@@ -177,8 +160,8 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
 .sl-container{position:relative}
 .sl-black{color:#fff!important;background-color:#000!important}
 .sl-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
-.sl-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);-webkit-transform: translate(0%, -50%);-moz-transform: translate(0%, -50%);}
-.sl-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%);-webkit-transform: translate(0%, -50%);-moz-transform: translate(0%, -50%);}
+.sl-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.sl-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 /*-------------------circle-----------*/
 
 
@@ -192,24 +175,16 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}*,*:before,*:afte
   display: block;
   width: 100%;
   height: auto;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
   transition: .5s ease;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .xpmiddle {
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
