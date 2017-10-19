@@ -144,16 +144,6 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 }
 
 
-
-
-
-/*-------------------circle-----------*/
-.demo {
-  max-width: 960px;
-  margin: 150px auto;
-}
-
-
 /*-------------------slider-----------*/
 
 .sl-content{max-width:800px;margin:auto}
@@ -162,44 +152,94 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 .sl-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .sl-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .sl-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+
+
 /*-------------------circle-----------*/
 
 
-.xpcontainer {
-    position: relative;
-    width: 100%;
+@-webkit-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@-moz-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
 }
 
-.xpimage {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+/* Container */
+
+.progressc {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin-left: 6%;
+  text-align: center;
 }
 
-.xpmiddle {
-  transition: .5s ease;
-  opacity: 0;
+/* Item */
+
+.progressc>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 2rem;
+}
+
+.progressc>li:before {
+  content: attr(data-name);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;
 }
 
-.xpcontainer:hover .xpimage {
-  opacity: 0.7;
+.progressc>li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.xpcontainer:hover .xpmiddle {
-  opacity: 1;
+.progressc svg {
+  width: 10rem;
+  height: 10rem;
 }
 
-.xptext {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.progressc svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
 }
+
+.progressc svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 6;
+  stroke-dasharray: 629;
+  stroke: grey;
+  -webkit-animation: load 2s;
+  -moz-animation: load 2s;
+  -o-animation: load 2s;
+  animation: load 2s;
+}
+
+
+/*-------------------circle-----------*/
+
+
