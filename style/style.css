@@ -124,13 +124,6 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 	.abtmetxt{
 		font-size: 85%;
 	}
-	
-	.edu{
-		margin-left: 50%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
 }
 
 @media screen and (max-width: 767px) {
@@ -148,13 +141,8 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 	.abtmetxt{
 		font-size: 85%;
 	}
-	.edu{
-		margin-left: 50%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
 }
+
 
 
 /*-------------------slider-----------*/
@@ -190,9 +178,10 @@ stroke-dashoffset:0
 .edu {
   position: relative;
   display: inline-block;
-  padding: 0;
-  margin-left: 15%;
   text-align: center;
+  float: left;
+  width: 33.33%;
+  padding: 20px;
 }
 /* Container */
 
